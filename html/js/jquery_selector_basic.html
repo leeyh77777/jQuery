@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // 태그 선택자
+        $(function() {
+            const list1 = $("li");
+            // console.log(list1)
+
+
+        // 아이디 선택자
+        const menu2 = $("#menu2");
+        console.log(menu2);
+
+        // 클래스 선택자
+        const menus = $(".menus");
+        // console.log(menus);
+
+        // const menu23 = $()
+
+
+        // 하위 요소 선택자
+        $("li span").css("border", "1px solid red");
+
+        
+
+
+    });
+    </script>
+</head>
+<body>
+    <ul class="main">
+        <li class="menus"><span>메뉴1</span></li>
+        <li id="menu2" class="menus"><span>메뉴2</span></li>
+        <li id="menu3" class="menus">메뉴3</li>
+        <li class="menus">메뉴4</li>
+        <li class="menus">메뉴5</li>
+        <li class="menu">
+            <ul class="sub">
+                <li><span>하위메뉴1</span></li>
+                <li><span>하위메뉴2</span></li>
+                <li><span>하위메뉴3</span></li>
+                <li><span>하위메뉴4</span></li>
+                <li><span>하위메뉴5</span></li>
+                <li>
+                    <ul class="sub_sub">
+                        <li class="sub_menu">하위 하위 메뉴1</li>
+                        <li class="sub_menu">하위 하위 메뉴2</li>
+                        <li class="sub_menu">하위 하위 메뉴3</li>
+                        <li class="sub_menu">하위 하위 메뉴4</li>
+                        <li class="sub_menu">하위 하위 메뉴5</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

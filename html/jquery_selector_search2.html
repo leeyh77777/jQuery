@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(function() {
+                // $("input[type='text']").css("border", "1px solid red");
+                // $("input[type]").css("border", "1px solid red");
+                // $("input:text").css("border", "1px solid red");
+                // $("input[name^='mem']").css("border", "1px solid red");
+
+                // $("a[href$='net']").css("background", "orange");
+
+                $("a[href*='www']").css("background", "orange");
+
+            });
+
+        </script>
+        
+    </head>
+    <body>
+        <input type="text" name="memId">
+        <input type="password" name="memPw">
+
+        <a href="https://www.naver.com">네이버</a>
+        <a href="https://www.daum.net">다음</a>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(function() {
+                // $("li").first().css("background", "orange");
+                // $("li").last().css("background", "blue");
+                // $("li:odd").css("border", "1px solid red");
+                // $("li:even").css("border", "1px solid blue");
+                // $("ul li:nth-child(2n+1)").css("border", "1px solid red")
+
+                // $("li:first-of-type").css("background", "orange")
+
+                // $("ul li:only-child").css("background", "red");
+
+                //eq
+                // $("li").eq(1).css("background", "red"); //2번째 요소(인덱스가 0번부터 시작해서)
+                $("li:gt(5)").css("background", "blue");
+
+
+            });
+        </script>
+    </head>
+    <body>
+       <ul>
+           <li>메뉴1</li>
+           <li>메뉴2</li>
+           <li>메뉴3</li>
+           <li>메뉴4</li>
+           <li>메뉴5</li>
+           <li>메뉴6</li>
+           <li>메뉴7</li>
+           <li>메뉴8</li>
+           <li>메뉴9</li>
+           <li>메뉴10</li>
+       </ul> 
+       <ul>
+           <li>메뉴1-1</li>
+       </ul>
+    </body>
+</html>
